@@ -4,7 +4,7 @@ Dans ce TP vous allez utiliser  les technologies de gestion de code ainsi que la
 * CMake
 * OpenCV
 
-L'objectif principal sera de construire un logiciel qui vous permettra d'appliquer un filtre gaussien à une image configuré par l'utilisateur. Également, l'utilisateur pourra sauvegarder l'image filtrée dans un fichier PNG.
+L'objectif principal sera de construire un logiciel qui vous permettra d'appliquer un filtre gaussien à une image configuré par l'utilisateur. L'utilisateur pourra également,  sauvegarder l'image filtrée dans un fichier PNG.
 
 À la fin de ce TP l'application devrait ressembler à l'image ci-dessous:
 
@@ -19,7 +19,7 @@ L'objectif principal sera de construire un logiciel qui vous permettra d'appliqu
       
       ![alt text](https://raw.githubusercontent.com/danyfel80/TPOpenCV/master/img/screenshot3.png)
    
-   3. Remplissez les formulaire comme ci-dessous et puis cliquez sur Finish.
+   3. Remplissez le formulaire comme ci-dessous et puis cliquez sur Finish.
    
       ![alt text](https://raw.githubusercontent.com/danyfel80/TPOpenCV/master/img/screenshot4.png)
    
@@ -42,11 +42,11 @@ L'objectif principal sera de construire un logiciel qui vous permettra d'appliqu
    
       ![alt text](https://raw.githubusercontent.com/danyfel80/TPOpenCV/master/img/screenshot8.png)
    
-      Dans cet étape CMake va lire le fichier CMakeLists.txt qui se trouve dans le répertoire src et présentera la configuration trouvée par défaut dans ce fichier. À la fin de cette étape vous aurez des champs en rouge pour que vous puissiez compléter la configuration.
+      Dans cette étape CMake va lire le fichier CMakeLists.txt qui se trouve dans le répertoire src et présentera la configuration trouvée par défaut dans ce fichier. À la fin de cette étape vous aurez des champs en rouge pour que vous puissiez compléter la configuration.
    
       ![alt text](https://raw.githubusercontent.com/danyfel80/TPOpenCV/master/img/screenshot9.png)
    
-      Comme vous pouvez remarquer, dans les champs en rouge on vous demande d’indiquer le chemin du fichier exécutable d’Eclipse, ainsi que la version. Aussi, CMake a détecté automatiquement le répertoire des librairies OpenCV.
+      Comme vous pouvez le remarquer, dans les champs en rouge on vous demande d’indiquer le chemin du fichier exécutable d’Eclipse, ainsi que la version. Aussi, CMake a détecté automatiquement le répertoire des librairies OpenCV.
    
    5. Indiquez le répertoire du fichier exécutable Eclipse qui se trouve dans [demandez au professeur] avec la version 4.3 (Kepler) et puis cliquez sur Configure à nouveau.
    
@@ -67,7 +67,7 @@ L'objectif principal sera de construire un logiciel qui vous permettra d'appliqu
       
       ![alt text](https://raw.githubusercontent.com/danyfel80/TPOpenCV/master/img/screenshot13.png)
    
-   2. Slectionez le Wizard C/C++->Existing Code as Makefile Project et cliquez Next
+   2. Sélectionnez le Wizard C/C++->Existing Code as Makefile Project et cliquez sur Next
       
       ![alt text](https://raw.githubusercontent.com/danyfel80/TPOpenCV/master/img/screenshot14.png)
    
@@ -75,22 +75,22 @@ L'objectif principal sera de construire un logiciel qui vous permettra d'appliqu
       
       ![alt text](https://raw.githubusercontent.com/danyfel80/TPOpenCV/master/img/screenshot15.png)
    
-   À la fin vous aurez le projet sur Eclipse avec les fichiers de code source main.cpp, Gaussian.h et Gaussian.cpp.
+   À la fin vous aurez le projet sous l'IDE Eclipse avec les fichiers de code source main.cpp, Gaussian.h et Gaussian.cpp.
    
    ![alt text](https://raw.githubusercontent.com/danyfel80/TPOpenCV/master/img/screenshot16.png)
    
-   4. Essayez de construire le projet avec Eclipse et de l’exécuter sur une terminal avec la commande ~/git/TPOpenCV/build/imageBlur ~/git/TPOpenCV/running.png
+   4. Essayez de construire le projet avec Eclipse et de l’exécuter sur un terminal avec la commande ~/git/TPOpenCV/build/imageBlur ~/git/TPOpenCV/running.png
    
       ![alt text](https://raw.githubusercontent.com/danyfel80/TPOpenCV/master/img/screenshot17.png)
       
       ![alt text](https://raw.githubusercontent.com/danyfel80/TPOpenCV/master/img/screenshot18.png)
    
-   Si vous regardez le code dans le main.cpp, les paramètre passés sont utilisés pour créer une image dans l’instance filtrer de type Gaussian.
+   Si vous regardez le code dans le main.cpp, les paramètres passés sont utilisés pour créer une image dans l’instance filtrer de type Gaussian.
    
    5. Explorez le code dans les fichiers main.cpp, Gaussian.h et Gaussian.cpp
 
 4. Ajout de fonctionnalités
-   1. Vous allez rajouter un trackbar au-dessous de l’image présenté qui permettra à l’utilisateur de choisir le niveau de floutage du filtre Gaussian.
+   1. Vous allez rajouter un trackbar au-dessous de l’image présentée qui permettra à l’utilisateur de choisir le niveau de floutage du filtre Gaussian.
    2. Quand l’utilisateur change la valeur du trackbar une fenêtre montrera le résultat du filtre Gaussian.
    3. Quand l’utilisateur clique sur l’image résultat, elle sera sauvegardée sur un fichier png. Ajoutez un MouseCallback à l’image résultat pour implémenter cette fonctionnalité.
       Utilisez imwrite pour sauvegarder l’image résultat dans le fichier outputFilePath.
