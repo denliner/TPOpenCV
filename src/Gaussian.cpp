@@ -24,7 +24,7 @@ void Gaussian::show() {
 	waitKey(0);
 }
 
-//void Gaussian::blur(int value, void* data) {
+//void Gaussian::blurImage(int value, void* data) {
 //	// TODO: implement this method
 //}
 
