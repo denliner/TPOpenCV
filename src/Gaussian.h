@@ -14,6 +14,7 @@ class Gaussian {
 private:
 	string inputFilePath;
 	Mat inputImage;
+	Mat outputImage;
 	string outputFilePath;
 
 public:
@@ -40,11 +41,11 @@ public:
 	/**
 	 * Blurs inputImage and show the result another window
 	 */
-//	void blurImage(int value, void* data);
+//	static void blurImage(int value, void* data);
 	/**
 	 * Saves the blurred image to a png file.
 	 */
-//	void onMouseClick();
+//	static void onMouseClick(int event, int x, int y, int flags, void* data);
 };
 
 #endif
